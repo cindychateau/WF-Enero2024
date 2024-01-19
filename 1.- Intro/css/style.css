@@ -1,0 +1,113 @@
+/* CSS - Cascade Style Sheets */
+/*
+SELECTORES BÁSICOS
+etiqueta {
+    propiedad: valor;
+}
+
+.clase {
+    propiedad: valor;
+}
+
+#id {
+    propiedad: valor;
+}
+
+*/
+
+h2 {
+    color: blue;
+    font-size: 40px;
+}
+
+/*Clase puede ser utilizada para múltiples elementos
+Múltiples clases para 1 solo elemento*/
+.rojo {
+    color: red;
+    font-size: 10px;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+/*ID no se pueden repetir
+Elementos/Tags solo tienen 1 ID
+*/
+#parrafo_especial {
+    border: 2px solid purple;
+    border-radius: 20px;
+}
+
+/*Importancia: ID, clases, etiqueta*/
+
+#h2_morado {
+    color: purple;
+}
+
+/* Etiqueta strong que está dentro de párrafo */
+p strong { 
+    text-transform: uppercase;
+}
+
+/*
+.rojo strong
+#parrafo_especial em
+.subrayado .abc
+*/
+
+/*Solamente se ve afectado el descendiente directo de mi elemento*/
+.container > p {
+    color: yellow;
+}
+
+.container > div > p {
+    font-size: 25px;
+}
+
+input[type="text"] {
+    width: 350px;
+}
+
+input[type="number"] {
+    height: 100px;
+}
+
+input, textarea {
+    border: 3px solid magenta;
+}
+
+/*COLOR*/
+.color {
+    /*color: se refiere al color de la letra*/
+    /* color: green; */
+    /* color: #043e09; Color en hexadecimal */
+    color: rgb(19, 150, 232); /*Color en RGB*/
+    /*background-color: color de fondo*/
+    background-color: gray;
+}
+
+#texto {
+    text-align: center; /*left, center, right, justify*/
+    text-decoration: underline; /*underline, line-through, none, overline*/
+    font-style: italic; /*italic, normal*/
+    font-weight: bold; /*bold, normal, light. 100, 300, 900*/
+    font-size: 30px; /*px, pt, em*/
+    font-family: sans-serif; /*Nombre de font que queramos para el HTML*/
+}
+
+.tamano {
+    background-color: darksalmon;
+    width: 400px; /*ancho*/
+    height: 50px; /*alto*/
+}
+
+.background {
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+
+    background-color: aqua;
+    background-image: url(../images/gatito_small.jpg);
+    background-repeat: no-repeat; /*no-repeat, repeat-x, repeat-y, repeat*/
+    background-size: 50%; /*cover: estira verticalmente, contain: estira horizontalmente*/
+}
