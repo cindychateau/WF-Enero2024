@@ -111,3 +111,26 @@ input, textarea {
     background-repeat: no-repeat; /*no-repeat, repeat-x, repeat-y, repeat*/
     background-size: 50%; /*cover: estira verticalmente, contain: estira horizontalmente*/
 }
+
+/*BOX MODEL*/
+#box_model {
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+    /*Margin: es el espacio entre mi elemento y el resto de la página*/
+    margin: 20px; /*%, em, pt*/
+    margin-top: 10px; /*-top, -right, -bottom, -left*/
+    margin: 50px 15px; /* ArribaAbajo IzqDer */
+    margin: 50px 20px 100px 200px; /*arriba der abajo izq*/
+
+    /*Padding es el margin interno*/
+    padding: 20px;
+    padding-bottom: 100px;
+    padding: 50px 10px;
+    padding: 10px 30px 50px 100px;
+
+    border: 2px solid black; /*solid dotted dashed double*/
+
+    /*Centrar horizontalmente*/
+    margin: 10px auto;
+}
