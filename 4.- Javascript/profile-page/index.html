@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 </head>
@@ -30,15 +31,15 @@
                         <img src="images/jane-m.jpg" alt="jane-medium-avatar" class="avatar-m" onmouseover="cambiar_imagen(this)" onmouseout="regresa_imagen(this)">
                     </div>
                     <div class="card-body">
-                        <h1>Jane Doe</h1>
+                        <h1 id="nombre">Jane Doe</h1>
                         <h3>
                             <img src="images/map-marker.png" alt="pin" class="icon-s" ondblclick="aumentar_clicks()"> 
-                            Seattle
+                            <span>Seattle</span>
                         </h3>
-                        <p onclick="cambiar_color(this)">Developer | Engineer | Problem Solver<br>
+                        <p class="descripcion" onclick="cambiar_color(this)">Developer | Engineer | Problem Solver<br>
                         Master of shadows and the Internet!</p>
                         <p>
-                            <a href="#">
+                            <a href="#" onclick="editar_perfil()" class="editar">
                                 <img src="images/gear.png" alt="gear" class="icon-s"> 
                                 edit profile
                             </a>
@@ -72,8 +73,9 @@
                             <span>Todd E.</span>
                         </span>
                         <span class="end">
-                            <img src="images/accept-circle.png" alt="accept" class="avatar-s">
+                            <img src="images/accept-circle.png" alt="accept" class="avatar-s" onclick="hizo_click_arriba()">
                             <img src="images/close-circle.png" alt="decline" class="avatar-s">
+                            <span id="numero-arriba">0</span>
                         </span>
                     </div>
                     <div class="user-line">
@@ -82,8 +84,9 @@
                             <span>Phil K.</span>
                         </span>
                         <span class="end">
-                            <img src="images/accept-circle.png" alt="accept" class="avatar-s">
+                            <img src="images/accept-circle.png" alt="accept" class="avatar-s" onclick="hizo_click_abajo()">
                             <img src="images/close-circle.png" alt="decline" class="avatar-s">
+                            <span id="numero-abajo">0</span>
                         </span>
                     </div>
                 </div>
